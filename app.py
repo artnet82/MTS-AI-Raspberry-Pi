@@ -15,19 +15,6 @@ import tts_pb2_grpc
 
 
 def read_api_config(file_name: str = "config.ini") -> ConfigParser:
-    """
-    Загружает параметры соединения с API и авторизации из ini-файла.
-    Структура файла и примеры значений:
-
-    [API]
-    server_address: audiogram.mts.ai:443
-
-    [Auth]
-    sso_server_url: https://isso.mts.ru/auth/
-    realm_name: mts
-    client_id: <client id>
-    client_secret: <client secret>
-    """
 
     config = ConfigParser()
     config.read(file_name)
